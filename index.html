@@ -1,424 +1,110 @@
 <!DOCTYPE html>
-<html class="dark" lang="es" style="scroll-behavior: smooth;">
+<html lang="es">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>ERICK FITNESS | Entrená tu cuerpo, transformá tu vida</title>
-    <meta name="description" content="Prof. Erick Manrique - Movimiento, Salud y Rendimiento">
-
-    <!-- Open Graph / WhatsApp / Facebook Preview -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://carlosmolina2024.github.io/erickfitness/">
-    <meta property="og:title" content="ERICK FITNESS | Entrená tu cuerpo, transformá tu vida">
-    <meta property="og:description" content="Prof. Erick Manrique - Movimiento, Salud y Rendimiento. Clases grupales, personalizadas y acondicionamiento físico.">
-    <meta property="og:image" content="https://i.postimg.cc/HnzFk0Xz/Whats-App-Image-2026-08-28-at-11-26-00.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ERICK FITNESS | Entrená tu cuerpo, transformá tu vida">
-    <meta name="twitter:description" content="Prof. Erick Manrique - Movimiento, Salud y Rendimiento.">
-    <meta name="twitter:image" content="https://i.postimg.cc/HnzFk0Xz/Whats-App-Image-2026-08-28-at-11-26-00.jpg">
-
-    <!-- Favicon (Ícono pequeño en la pestaña del navegador) -->
-    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/HnzFk0Xz/Whats-App-Image-2026-08-28-at-11-26-00.jpg">
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"/>
-    
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary-fixed": "#1a1c1c",
-                        "surface-dim": "#131313",
-                        "surface-container-highest": "#353534",
-                        "tertiary": "#ffffff",
-                        "error-container": "#93000a",
-                        "secondary-fixed": "#e2e2e2",
-                        "on-primary-fixed": "#161e00",
-                        "on-surface-variant": "#c4c9ac",
-                        "on-primary-container": "#556d00",
-                        "on-tertiary-container": "#656464",
-                        "tertiary-container": "#e5e2e1",
-                        "inverse-on-surface": "#313030",
-                        "primary-fixed-dim": "#abd600",
-                        "surface-container": "#201f1f",
-                        "error": "#ffb4ab",
-                        "outline-variant": "#444933",
-                        "on-background": "#e5e2e1",
-                        "inverse-primary": "#506600",
-                        "on-tertiary-fixed-variant": "#474746",
-                        "surface-container-lowest": "#0e0e0e",
-                        "on-secondary-container": "#b4b5b5",
-                        "outline": "#8e9379",
-                        "tertiary-fixed": "#e5e2e1",
-                        "surface": "#131313",
-                        "on-tertiary": "#313030",
-                        "inverse-surface": "#e5e2e1",
-                        "on-surface": "#e5e2e1",
-                        "tertiary-fixed-dim": "#c8c6c5",
-                        "on-error-container": "#ffdad6",
-                        "secondary-fixed-dim": "#c6c6c7",
-                        "surface-container-low": "#1c1b1b",
-                        "on-tertiary-fixed": "#1c1b1b",
-                        "background": "#131313",
-                        "secondary": "#c6c6c7",
-                        "surface-variant": "#353534",
-                        "on-primary": "#283500",
-                        "primary-container": "#c3f400",
-                        "surface-container-high": "#2a2a2a",
-                        "surface-bright": "#3a3939",
-                        "primary": "#ffffff",
-                        "on-error": "#690005",
-                        "on-secondary": "#2f3131",
-                        "primary-fixed": "#c3f400",
-                        "on-primary-fixed-variant": "#3c4d00",
-                        "surface-tint": "#abd600",
-                        "secondary-container": "#454747",
-                        "on-secondary-fixed-variant": "#454747"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "margin-mobile": "20px",
-                        "margin-desktop": "64px",
-                        "stack-sm": "8px",
-                        "unit": "4px",
-                        "stack-md": "24px",
-                        "stack-lg": "48px"
-                    },
-                    "fontFamily": {
-                        "body-lg": ["Hanken Grotesk"],
-                        "display-lg": ["Anybody"],
-                        "headline-md": ["Anybody"],
-                        "label-bold": ["Space Grotesk"],
-                        "body-md": ["Hanken Grotesk"],
-                        "headline-xl-mobile": ["Anybody"],
-                        "headline-xl": ["Anybody"]
-                    },
-                    "fontSize": {
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900" }],
-                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
-                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700" }],
-                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "headline-xl-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "800" }],
-                        "headline-xl": ["48px", { "lineHeight": "1.2", "fontWeight": "800" }]
-                    }
-                }
-            }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Manrique - Personal Trainer IFBB</title>
     <style>
-        body {
-            background-color: theme('colors.background');
-            color: theme('colors.on-surface');
-            -webkit-font-smoothing: antialiased;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        .neon-glow {
-            box-shadow: 0 0 20px rgba(195, 244, 0, 0.2);
-        }
-        
-        .text-glow {
-            text-shadow: 0 0 10px rgba(195, 244, 0, 0.3);
-        }
-
-        .glass-panel {
-            background: rgba(32, 31, 31, 0.7);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(19,19,19,0) 0%, rgba(19,19,19,0.8) 70%, rgba(19,19,19,1) 100%);
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #0d0d0d;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
-        .img-lazy {
+        /* Pantalla de Carga (Loader) */
+        #loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #120514 0%, #0d0d0d 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Spinner con colores de la credencial IFBB */
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(147, 51, 234, 0.15);
+            border-left-color: #a855f7;
+            border-top-color: #6b21a8;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader-text {
+            margin-top: 20px;
+            color: #e9d5ff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Iframe a pantalla completa */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Clase para ocultar el cargador */
+        .hidden {
             opacity: 0;
-            transition: opacity 0.4s ease-in-out;
-        }
-        .img-lazy.loaded {
-            opacity: 1;
+            visibility: hidden;
         }
     </style>
 </head>
-<body class="min-h-screen font-body-md overflow-x-hidden">
+<body>
 
-<!-- PRELOADER GLOBAL DE SITIO WEB -->
-<div id="preloader" class="fixed inset-0 z-[100] bg-surface-container-lowest flex flex-col items-center justify-center transition-opacity duration-500">
-    <div class="relative flex items-center justify-center mb-6">
-        <div class="w-16 h-16 border-4 border-primary-fixed/20 border-t-primary-fixed rounded-full animate-spin"></div>
-        <div class="absolute w-8 h-8 bg-primary-fixed/30 rounded-full animate-ping"></div>
+    <!-- Pantalla de Carga -->
+    <div id="loader-container">
+        <div class="spinner"></div>
+        <div class="loader-text">Cargando aplicación...</div>
     </div>
-    <span class="font-display-lg text-headline-md italic tracking-tighter text-primary animate-pulse">
-        CARGANDO <span class="text-primary-fixed">ERICK FITNESS</span>...
-    </span>
-</div>
 
-<nav class="bg-background/80 dark:bg-surface/80 backdrop-blur-xl docked full-width top-0 z-50 border-b border-white/10 flat no shadows flex justify-between items-center px-margin-desktop h-20 w-full fixed top-0 left-0">
-    <a class="flex items-center gap-3 font-display-lg text-headline-md italic tracking-tighter text-primary dark:text-primary-fixed" href="#">
-        <div class="relative w-10 h-10 rounded-full border border-primary-fixed overflow-hidden bg-surface-container flex-shrink-0">
-            <div class="img-skeleton absolute inset-0 bg-surface-container-high animate-pulse"></div>
-            <img src="https://i.postimg.cc/DyFXVrC3/Gemini-Generated-Image-p4xuenp4xuenp4xu.jpg" alt="Logo Erick Fitness" class="img-lazy w-full h-full object-cover relative z-10" onload="onImgLoad(this)">
-        </div>
-        ERICK FITNESS
-    </a>
-    <div class="hidden md:flex gap-8">
-        <a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary-fixed transition-colors" href="#about">Sobre mí</a>
-        <a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary-fixed transition-colors" href="#services">Servicios</a>
-        <a class="font-label-bold text-label-bold uppercase text-on-surface-variant hover:text-primary-fixed transition-colors" href="#contacto">Contacto</a>
-    </div>
-    <a class="hidden md:inline-flex bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold uppercase px-6 py-3 rounded-DEFAULT hover:opacity-80 transition-opacity active:scale-95 duration-150 items-center justify-center" href="#contacto">
-        Empieza hoy
-    </a>
-</nav>
+    <!-- WebApp desplegada -->
+    <iframe 
+        id="app-frame"
+        src="https://script.google.com/macros/s/AKfycbxxFJGM9xM14HJaEsBSqJqCw3PO6Cu6yvSrWKTXK61q44jj7TO7JxHY2ldkS7WC6nXQIA/exec"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
 
-<header class="relative min-h-[90vh] flex items-end pt-20 pb-margin-desktop md:pb-stack-lg">
-    <div class="absolute inset-0 z-0 bg-surface-container-lowest">
-        <div class="img-skeleton absolute inset-0 bg-surface-container-high animate-pulse"></div>
-        <img alt="Erick Fitness" class="img-lazy w-full h-full object-cover object-top opacity-80 mix-blend-luminosity relative z-10" src="https://i.postimg.cc/W15WqbDv/Chat-GPT-Image-28-ago-2026-20-01-20.png" onload="onImgLoad(this)"/>
-        <div class="absolute inset-0 hero-gradient z-20"></div>
-    </div>
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="max-w-3xl space-y-stack-md">
-            <h1 class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary uppercase text-glow">
-                ENTRENÁ TU CUERPO,<br/>
-                <span class="text-primary-fixed">TRANSFORMÁ TU VIDA</span>
-            </h1>
-            <p class="font-body-lg text-body-lg text-secondary-fixed max-w-xl">
-                Prof. Erick Manrique - Movimiento, Salud y Rendimiento
-            </p>
-            <div class="pt-stack-sm">
-                <a class="inline-flex bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold uppercase px-8 py-4 rounded-DEFAULT hover:opacity-80 transition-opacity neon-glow items-center justify-center gap-2" href="#contacto">
-                    Empieza hoy
-                    <span class="material-symbols-outlined" data-icon="arrow_forward" data-weight="fill" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
+    <script>
+        const iframe = document.getElementById('app-frame');
+        const loader = document.getElementById('loader-container');
 
-<section class="py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="about">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-gutter items-center">
-        <div class="space-y-stack-md">
-            <div class="inline-flex items-center gap-2 px-3 py-1 border border-outline-variant rounded-full">
-                <span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
-                <span class="font-label-bold text-label-bold text-primary-fixed uppercase tracking-wider">Profesional a cargo</span>
-            </div>
-            <h2 class="font-headline-md text-headline-xl-mobile md:text-headline-xl text-primary uppercase leading-tight">
-                EDUCACIÓN FÍSICA <br/><span class="text-on-surface-variant">DE ALTO NIVEL</span>
-            </h2>
-            <p class="font-body-lg text-body-lg text-secondary">
-                Como Profesor de Educación Física, el enfoque no es solo transpirar, sino entrenar con propósito. Cada sesión está diseñada bajo principios biomecánicos y fisiológicos para asegurar resultados reales y prevenir lesiones.
-            </p>
-            <p class="font-body-lg text-body-lg text-secondary">
-                Recibí una guía profesional y entrenamiento personalizado adaptado a tus capacidades y objetivos. El rendimiento verdadero se construye sobre una base de movimiento consciente y salud integral.
-            </p>
-        </div>
-        <div class="relative">
-            <div class="aspect-square glass-panel rounded-xl overflow-hidden relative bg-surface-container">
-                <div class="img-skeleton absolute inset-0 bg-surface-container-high animate-pulse"></div>
-                <img id="fotoerick" src="https://i.postimg.cc/Prxd8NJ3/Gemini-Generated-Image-qw1sk1qw1sk1qw1s.jpg" alt="Erick Fitness Trainer" class="img-lazy w-full h-full object-cover relative z-10" onload="onImgLoad(this)">
-                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent z-20"></div>
-            </div>
-            <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-primary-fixed/20 blur-3xl rounded-full"></div>
-        </div>
-    </div>
-</section>
-
-<section class="py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop bg-surface" id="services">
-    <div class="max-w-7xl mx-auto space-y-stack-lg">
-        <div class="text-center space-y-stack-sm max-w-2xl mx-auto">
-            <h2 class="font-headline-md text-headline-xl-mobile md:text-headline-xl text-primary uppercase">Programas de <span class="text-primary-fixed">Entrenamiento</span></h2>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">Soluciones integrales para llevar tu físico y bienestar al siguiente nivel.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-gutter">
-            <div class="glass-panel p-6 rounded-lg border-t-2 border-t-primary-fixed hover:bg-surface-container-high transition-colors group">
-                <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-stack-md group-hover:neon-glow transition-all">
-                    <span class="material-symbols-outlined text-primary-fixed text-2xl" data-icon="directions_run" data-weight="fill" style="font-variation-settings: 'FILL' 1;">directions_run</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Entrenamiento Funcional</h3>
-                <p class="font-body-md text-body-md text-secondary">Movimientos multiarticulares diseñados para mejorar tu desempeño en el día a día y en el deporte.</p>
-            </div>
-            <div class="glass-panel p-6 rounded-lg border-t border-t-outline-variant hover:border-t-primary-fixed hover:bg-surface-container-high transition-colors group">
-                <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-stack-md group-hover:neon-glow transition-all">
-                    <span class="material-symbols-outlined text-primary-fixed text-2xl" data-icon="groups" data-weight="fill" style="font-variation-settings: 'FILL' 1;">groups</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Clases Grupales</h3>
-                <p class="font-body-md text-body-md text-secondary">Energía colectiva y motivación al máximo. Entrenamientos dinámicos en un ambiente de comunidad.</p>
-            </div>
-            <div class="glass-panel p-6 rounded-lg border-t border-t-outline-variant hover:border-t-primary-fixed hover:bg-surface-container-high transition-colors group">
-                <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-stack-md group-hover:neon-glow transition-all">
-                    <span class="material-symbols-outlined text-primary-fixed text-2xl" data-icon="fitness_center" data-weight="fill" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Acondicionamiento Físico</h3>
-                <p class="font-body-md text-body-md text-secondary">Desarrollo de fuerza, resistencia y agilidad para construir un cuerpo atlético y resiliente.</p>
-            </div>
-            <div class="glass-panel p-6 rounded-lg border-t border-t-outline-variant hover:border-t-primary-fixed hover:bg-surface-container-high transition-colors group">
-                <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-stack-md group-hover:neon-glow transition-all">
-                    <span class="material-symbols-outlined text-primary-fixed text-2xl" data-icon="favorite" data-weight="fill" style="font-variation-settings: 'FILL' 1;">favorite</span>
-                </div>
-                <h3 class="font-headline-md text-headline-md text-primary uppercase mb-2">Salud y Bienestar</h3>
-                <p class="font-body-md text-body-md text-secondary">Enfoque integral que prioriza la recuperación, la movilidad y la mejora de tu calidad de vida general.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-stack-lg md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden" id="contacto">
-    <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-primary-fixed/5 blur-[120px] rounded-full pointer-events-none"></div>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-stack-lg items-center relative z-10">
-        <div class="space-y-stack-md">
-            <h2 class="font-headline-md text-headline-xl-mobile md:text-headline-xl text-primary uppercase">Da el <br/><span class="text-primary-fixed">Primer Paso</span></h2>
-            <p class="font-body-lg text-body-lg text-secondary">
-                Dejanos tus datos para coordinar una evaluación inicial. La información se registra de forma segura para realizar un seguimiento personalizado de tu progreso.
-            </p>
-            <div class="space-y-4 mt-8">
-                <div class="flex items-center gap-4 text-on-surface-variant">
-                    <span class="material-symbols-outlined text-primary-fixed" data-icon="phone_iphone">phone_iphone</span>
-                    <span class="font-body-lg text-body-lg">3825-589751</span>
-                </div>
-                <div class="flex items-center gap-4 text-on-surface-variant">
-                    <span class="material-symbols-outlined text-primary-fixed" data-icon="location_on">location_on</span>
-                    <span class="font-body-lg text-body-lg">Consultar disponibilidad y horarios</span>
-                </div>
-            </div>
-        </div>
-        
-        <form id="contactForm" class="glass-panel p-8 rounded-xl space-y-6">
-            <div class="space-y-2">
-                <label class="font-label-bold text-label-bold text-secondary uppercase" for="name">Nombre Completo</label>
-                <input class="w-full bg-surface-dim border border-outline-variant rounded-DEFAULT px-4 py-3 text-primary focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-colors" id="name" name="name" placeholder="Tu nombre" type="text" required/>
-            </div>
-            <div class="space-y-2">
-                <label class="font-label-bold text-label-bold text-secondary uppercase" for="email">Correo Electrónico</label>
-                <input class="w-full bg-surface-dim border border-outline-variant rounded-DEFAULT px-4 py-3 text-primary focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-colors" id="email" name="email" placeholder="tuemail@ejemplo.com" type="email" required/>
-            </div>
-            <div class="space-y-2">
-                <label class="font-label-bold text-label-bold text-secondary uppercase" for="phone">Teléfono / WhatsApp</label>
-                <input class="w-full bg-surface-dim border border-outline-variant rounded-DEFAULT px-4 py-3 text-primary focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-colors" id="phone" name="phone" placeholder="+54 9 ..." type="tel" required/>
-            </div>
-            <div class="space-y-2">
-                <label class="font-label-bold text-label-bold text-secondary uppercase" for="message">Objetivo / Mensaje</label>
-                <textarea class="w-full bg-surface-dim border border-outline-variant rounded-DEFAULT px-4 py-3 text-primary focus:border-primary-fixed focus:ring-1 focus:ring-primary-fixed transition-colors" id="message" name="message" placeholder="Contame qué buscás lograr..." rows="4"></textarea>
-            </div>
-            
-            <button id="submitBtn" class="w-full bg-primary-fixed text-on-primary-fixed font-label-bold text-label-bold uppercase px-8 py-4 rounded-DEFAULT hover:opacity-80 transition-opacity neon-glow mt-4" type="submit">
-                Enviar Consulta
-            </button>
-
-            <div id="formStatus" class="hidden text-center font-body-md py-2 px-4 rounded-DEFAULT"></div>
-
-            <p class="font-body-md text-body-md text-on-surface-variant text-center text-sm opacity-70">
-                Tus datos serán procesados para atención personalizada.
-            </p>
-        </form>
-    </div>
-</section>
-
-<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest full-width py-stack-lg border-t border-outline-variant flat flex flex-col items-center gap-stack-md px-margin-desktop w-full">
-    <div class="flex items-center gap-3 font-display-lg text-headline-md text-primary italic tracking-tighter">
-        <div class="relative w-8 h-8 rounded-full border border-primary-fixed overflow-hidden bg-surface-container flex-shrink-0">
-            <div class="img-skeleton absolute inset-0 bg-surface-container-high animate-pulse"></div>
-            <img src="https://i.postimg.cc/DyFXVrC3/Gemini-Generated-Image-p4xuenp4xuenp4xu.jpg" alt="Logo Erick Fitness" class="img-lazy w-full h-full object-cover relative z-10" onload="onImgLoad(this)">
-        </div>
-        ERICK FITNESS
-    </div>
-    <div class="flex gap-6">
-        <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary-fixed transition-colors hover:underline flex items-center gap-2" href="https://www.instagram.com/erick.manrique.10/" target="_blank">
-            <span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
-            @erickmanrique.10
-        </a>
-        <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary-fixed transition-colors hover:underline flex items-center gap-2" href="https://wa.me/5493825589751" target="_blank">
-            <span class="material-symbols-outlined" data-icon="chat">chat</span>
-            3825-589751
-        </a>
-        <a class="font-label-bold text-label-bold text-on-surface-variant hover:text-primary-fixed transition-colors hover:underline flex items-center gap-2" href="#" target="_blank">
-            <span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
-            Erick.M
-        </a>
-    </div>
-    <div class="font-body-md text-body-md text-on-surface-variant mt-stack-sm text-center">
-        © 2026 ERICK FITNESS. MOVIMIENTO • SALUD • RENDIMIENTO
-    </div>
-</footer>
-
-<script>
-    // Función para manejar el Skeleton Loader por cada imagen
-    function onImgLoad(img) {
-        img.classList.add('loaded');
-        const skeleton = img.parentElement.querySelector('.img-skeleton');
-        if (skeleton) {
-            skeleton.style.display = 'none';
-        }
-    }
-
-    // Ocultar pantalla de preloader global una vez cargada toda la página
-    window.addEventListener('load', function() {
-        const preloader = document.getElementById('preloader');
-        if (preloader) {
-            preloader.classList.add('opacity-0');
-            setTimeout(() => preloader.style.display = 'none', 500);
-        }
-    });
-
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyrjWNbrwkiMVSBk4ILkAv9XEHUP_lkTtx8-GixpHajOVbFoKbCf0yb7hsBUXDQ3cnR8g/exec";
-
-    document.getElementById("contactForm").addEventListener("submit", async function(e) {
-        e.preventDefault();
-        
-        const submitBtn = document.getElementById("submitBtn");
-        const statusDiv = document.getElementById("formStatus");
-        
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = "Enviando...";
-        statusDiv.classList.add("hidden");
-
-        const data = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            message: document.getElementById("message").value
+        // Ocultar cargador cuando el iframe responda la carga
+        iframe.onload = function() {
+            loader.classList.add('hidden');
         };
 
-        try {
-            await fetch(WEB_APP_URL, {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(data)
-            });
-
-            statusDiv.className = "text-center font-body-md py-3 px-4 rounded-DEFAULT bg-primary-fixed/20 text-primary-fixed border border-primary-fixed/40";
-            statusDiv.innerText = "¡Consulta enviada con éxito! Revisa tu correo electrónico.";
-            document.getElementById("contactForm").reset();
-
-        } catch (error) {
-            console.error("Error al enviar:", error);
-            statusDiv.className = "text-center font-body-md py-3 px-4 rounded-DEFAULT bg-error-container text-on-error-container border border-error/40";
-            statusDiv.innerText = "Hubo un problema al enviar el mensaje. Intenta nuevamente.";
-        } finally {
-            statusDiv.classList.remove("hidden");
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = "Enviar Consulta";
-        }
-    });
-</script>
+        // Respaldo de seguridad por si tarda la conexión
+        setTimeout(function() {
+            if (!loader.classList.contains('hidden')) {
+                loader.classList.add('hidden');
+            }
+        }, 8000);
+    </script>
 </body>
 </html>
